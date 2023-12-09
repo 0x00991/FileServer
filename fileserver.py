@@ -3,7 +3,7 @@ import os
 import sys
 import psutil
 _g = psutil.Process().cmdline()[0].split("\\")[-1].split("/")[-1]
-_h = psutil.Process().cmdline()[1].split("\\")[-1].split("/")[-1]
+_h = psutil.Process().cmdline()[1].split("\\")[-1].split("/")[-1] if len(psutil.Process().cmdline()) > 1 else ""
 self_name = _h if _g == "python.exe" and _h.endswith(".py") else _g
 
 PW = None if len(sys.argv) <= 1 else sys.argv[1]
