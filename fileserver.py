@@ -12,6 +12,7 @@ exts = {
     "image/jpeg": ["jpg"],
     "image/x-icon": ["ico"],
     "image/*": ["png", "gif", "jpeg", "webp"],
+    "image/svg+xml": ["svg"],
     
     "text/plain": ["txt", "py", "bat", "cmd", "ps1", "php", "md"],
     "text/javascript": ["js"],
